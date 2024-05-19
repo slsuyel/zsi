@@ -1,0 +1,422 @@
+.header-wave {
+    position: relative;
+    text-align: center;
+    /* background: linear-gradient(60deg, rgba(84, 58, 183, 1) 0%, rgba(0, 172, 193, 1) 100%); */
+    color: white;
+}
+
+.animated-gradient {
+    background: linear-gradient(245deg, #007bff, #006B7F, #601C7F, #082073);
+    background-size: 800% 800%;
+    animation: gradientAnimation 51s ease infinite;
+    transition: background-color 0.5s ease-in-out;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+.inner-header {
+    height: 65vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.waves {
+    position: relative;
+    width: 100%;
+    height: 15vh;
+    margin-bottom: -7px;
+    /*Fix for safari gap*/
+    min-height: 100px;
+    max-height: 150px;
+}
+
+.descriptions {
+    color: #FFFFFF;
+    font-size: 50px;
+    line-height: 70px;
+    font-weight: 700;
+    width: 70%;
+}
+
+.content {
+    position: relative;
+    height: 20vh;
+    text-align: center;
+    background-color: white;
+}
+
+/* Animation */
+
+.parallax>use {
+    animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
+}
+
+.parallax>use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+}
+
+.parallax>use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+}
+
+.parallax>use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+}
+
+.parallax>use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+}
+
+@keyframes move-forever {
+    0% {
+        transform: translate3d(-90px, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(85px, 0, 0);
+    }
+}
+
+/*Shrinking for mobile*/
+
+
+.make_ambition {
+    background-image: url(https://zsi.ai/wp-content/uploads/2024/03/Screenshot_11.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+
+.start_onboarding {
+    background-color: #007bff;
+    font-size: 19px;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 55px;
+    fill: #FFFFFF;
+    color: #FFFFFF;
+    border-radius: 50px;
+    padding: 0px 32px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.start_onboarding:hover {
+    background-color: #333333;
+    transform: scale(1.05);
+}
+
+.discover_now {
+    background-color: #ffffff;
+    font-size: 19px;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 55px;
+    fill: #000000;
+    color: #000000;
+    border-radius: 50px;
+    padding: 0px 32px;
+    text-decoration: none;
+    margin-bottom: 5px;
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.discover_now:hover {
+    background-color: #333333;
+    transform: scale(1.05);
+    color: white;
+
+}
+
+.img-wrap {
+    width: 113px;
+    height: 59px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-wrap img {
+    max-width: 85px;
+}
+
+
+.title-wrap-skill {
+    padding: 0 19px;
+    height: 59px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: blue;
+}
+
+.img-card-slick {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.img-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.img-card-slick img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.slick-content {
+    position: absolute;
+    background: #285ad9;
+    color: white;
+    padding: 7px 19px;
+    width: 79%;
+    left: 50%;
+    bottom: 17px;
+    transform: translateX(-50%);
+    border-radius: 9px;
+}
+
+.slick-prev:before {
+    font-family: 'slick';
+    font-size: 52px;
+
+    color: #0938b8;
+}
+
+.slick-next:before {
+    font-family: 'slick';
+    font-size: 52px;
+    color: #0938b8;
+}
+
+
+.slick-next {
+    right: 27px;
+}
+
+.slick-dots li button:before {
+    margin-top: 20px;
+    font-family: 'slick';
+    font-size: 13px;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    content: '•';
+    /* You can change this if you prefer a different symbol */
+    text-align: center;
+    opacity: .25;
+    color: black;
+    background-color: black;
+    /* Added background color for visibility */
+    border-radius: 0;
+    /* Makes the shape square */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+
+.cr-hver a {
+    position: relative;
+    display: block;
+    margin: 40px auto;
+    color: #a8aabc;
+    border: 1px solid #a8aabc;
+    overflow: hidden;
+    height: auto;
+}
+
+.cr-hver a .show {
+    position: relative;
+
+}
+
+.cr-hver a .show h1 {
+    position: absolute;
+    top: 94%;
+    left: 50%;
+    font-size: 1.5em;
+    transform: translate(-50%, -50%);
+    background: #2254d4;
+    width: 100%;
+    text-align: center;
+    padding: 6px;
+    color: white;
+}
+
+
+
+
+
+.cr-hver a .hide {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    padding: 28px;
+    color: #ffffff;
+    background-color: #007bff;
+    transform: translateX(100%);
+    transition: transform 0.8s;
+}
+
+.cr-hver a:hover .hide {
+    transform: translateX(0);
+}
+
+.video-container-ecosystem {
+    background-image: url("../assets/images/ytube-video.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.play-btn-eco {
+    cursor: pointer;
+    background: #4d1d7d;
+    padding: 22px;
+    border-radius: 49%;
+    border: 2px solid white;
+    transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+    /* Smooth animation */
+}
+
+/* Add a scale effect to always show animation */
+@keyframes play-btn-pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 5px rgba(77, 29, 125, 0.5);
+    }
+
+    50% {
+        transform: scale(1.1);
+        box-shadow: 0 0 15px rgba(77, 29, 125, 0.7);
+    }
+
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 5px rgba(77, 29, 125, 0.5);
+    }
+}
+
+.play-btn-eco {
+    animation: play-btn-pulse 2s infinite;
+    /* Infinite loop for the pulse effect */
+}
+
+/* Hover effect */
+.play-btn-eco:hover {
+    background: #8f38ec;
+    box-shadow: 0 0 20px rgba(77, 29, 125, 0.9);
+    transform: scale(1.2);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------- */
+/* RESPONSIVE */
+/* --------------- */
+
+@media (max-width: 768px) {
+
+    .video-container-ecosystem {
+        height: 200px;
+        left: -7px;
+        bottom: 7px;
+    }
+
+    .slick-content {
+        display: none;
+    }
+
+    .slick-next {
+        right: 4px !important;
+    }
+
+    .title-wrap-skill {
+        width: 100%;
+    }
+
+
+    .descriptions {
+
+        font-size: 30px;
+        line-height: 35px;
+        font-weight: 500;
+        width: 100%;
+    }
+
+    .waves {
+        height: 40px;
+        min-height: 40px;
+    }
+
+    .content {
+        height: 30vh;
+    }
+
+
+}
