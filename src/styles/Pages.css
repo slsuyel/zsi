@@ -506,3 +506,34 @@ h5 {
 .hidden-controls::media-controls {
     display: none !important;
 }
+
+
+/*  */
+
+
+.res-card {
+    box-sizing: border-box;
+    position: sticky;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.one {
+    top: 0px;
+
+}
+
+.two {
+    top: 20px;
+}
+
+.three {
+    top: 30px;
+
+}
+
+.four {
+    top: 40px;
+}

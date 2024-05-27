@@ -43,5 +43,4 @@ export type ServicesProps = {
   exploreText: string;
   services: string[];
   video: string;
-  class: string;
 };

@@ -31,7 +31,6 @@ const Services = () => {
         "CYBERSECURITY IMPLEMENTATION",
       ],
       video: software,
-      class: "order-1",
     },
     {
       title: "Web App Development",
@@ -49,7 +48,6 @@ const Services = () => {
         "ONGOING MAINTENANCE & SUPPORT",
       ],
       video: web,
-      class: "",
     },
     {
       title: "Mobile App Development",
@@ -67,7 +65,6 @@ const Services = () => {
         "SUPPORT & MAINTENANCE",
       ],
       video: mobile,
-      class: "",
     },
     {
       title: "Staff Augmentation Services",
@@ -85,7 +82,6 @@ const Services = () => {
         "SUPPORT & MAINTENANCE ENGINEERS",
       ],
       video: staff,
-      class: "",
     },
     {
       title: "UI/UX Design",
@@ -103,7 +99,6 @@ const Services = () => {
         "DESIGN SYSTEMS & GUIDELINES",
       ],
       video: ui,
-      class: "",
     },
     {
       title: "Project Evaluation",
@@ -121,7 +116,6 @@ const Services = () => {
         "CONTINUITY PLANNING",
       ],
       video: project,
-      class: "",
     },
     {
       title: "Change Management",
@@ -139,7 +133,6 @@ const Services = () => {
         "SUSTAINABILITY MEASURES",
       ],
       video: change,
-      class: "",
     },
     {
       title: "Smart Teams Service",
@@ -157,7 +150,6 @@ const Services = () => {
         "PERFORMANCE ANALYTICS & INSIGHTS",
       ],
       video: smart,
-      class: "",
     },
     {
       title: "Digital Transformation",
@@ -175,7 +167,6 @@ const Services = () => {
         "CYBERSECURITY ENHANCEMENTS",
       ],
       video: digital,
-      class: "",
     },
     {
       title: "IT Consulting",
@@ -193,7 +184,6 @@ const Services = () => {
         "COMPLIANCE & RISK MANAGEMENT",
       ],
       video: it,
-      class: "",
     },
     {
       title: "Cybersecurity Services",
@@ -211,7 +201,6 @@ const Services = () => {
         "DATA PROTECTION & PRIVACY",
       ],
       video: cyber,
-      class: "",
     },
   ];
 
