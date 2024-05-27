@@ -36,3 +36,12 @@ export type MessageModel = {
   direction: string; // Add direction property
   position: number; // Add position property
 };
+
+export type ServicesProps = {
+  title: string;
+  description: string;
+  exploreText: string;
+  services: string[];
+  video: string;
+  class: string;
+};

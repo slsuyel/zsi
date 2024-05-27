@@ -75,7 +75,7 @@ const Header = () => {
       <Navbar
         expand="lg"
         fixed={isFixed ? "top" : undefined}
-        className={`border-bottom py-2  ${
+        className={`header_shadow py-3 mx-auto  ${
           isFixed ? "fix-bg " : "animated-gradient "
         } ${isMobile ? "d-none" : "d-block"}`}
       >
@@ -103,9 +103,9 @@ const Header = () => {
 
       {isMobile && (
         <>
-          <div className="align-items-center d-flex justify-content-between p-2 bg-dark">
+          <div className=" align-items-center d-flex justify-content-between p-2 bg-dark ">
             <Navbar.Brand href="/" className="p-1 ">
-              <img src={logo} alt="" width={120} />
+              <img src={logo} alt="" width={100} />
             </Navbar.Brand>
             <Button type="primary" className="rounded-0 " onClick={showDrawer}>
               <MenuOutlined />

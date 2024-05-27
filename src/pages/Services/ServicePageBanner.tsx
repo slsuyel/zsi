@@ -64,7 +64,7 @@ const ServicePageBanner = () => {
   };
 
   return (
-    <div>
+    <div data-aos="fade-up" data-aos-duration="2000">
       <h1
         style={{ color: "#8938E5" }}
         className="fs-4 fw-bolder py-3 text-center"
@@ -102,7 +102,10 @@ const ServicePageBanner = () => {
         </div>
 
         <div className="py-4" style={{ background: "#1C1324" }}>
-          <div className="d-flex flex-row flex-nowrap gap-3 overflow-auto col-md-11 mx-auto ">
+          <div
+            className="d-flex flex-row flex-nowrap gap-3 overflow-auto col-md-11 mx-auto "
+            data-aos="flip-down"
+          >
             {services.map((s) => (
               <div className="fw-medium mb-2 px-2 text-nowrap text-white fs-5">
                 {s}

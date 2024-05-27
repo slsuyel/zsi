@@ -420,3 +420,89 @@
 
 
 }
+
+
+
+
+.service-section h2 {
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.service-section p,
+h5 {
+    color: white;
+}
+
+.service-section ul {
+    color: white;
+    list-style-type: none;
+    padding: 0;
+}
+
+.service-section ul li {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.service-section span {
+    color: #ffffff;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease, text-decoration 0.3s ease;
+    border-bottom: 2px solid;
+
+}
+
+.service-section span:hover {
+    background: white;
+    color: #232729;
+    padding: 6px 2px;
+    border-radius: 0px 9px;
+    cursor: pointer;
+}
+
+
+.explore-btn {
+    background-color: #ffffff;
+    color: #3c0066;
+    border: none;
+    padding: 10px 20px;
+    font-weight: 600;
+}
+
+.explore-btn:hover {
+    background-color: #010101;
+    color: white;
+}
+
+.video_container {
+    padding: 7px;
+    border: 2px solid white;
+    border-radius: 0 0 0 0px;
+}
+
+.hidden-controls {
+    object-fit: none;
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 2px solid white;
+    aspect-ratio: 1.7777;
+}
+
+.hidden-controls::-webkit-media-controls {
+    display: none !important;
+}
+
+.hidden-controls::-moz-media-controls {
+    display: none !important;
+}
+
+.hidden-controls::-ms-media-controls {
+    display: none !important;
+}
+
+.hidden-controls::media-controls {
+    display: none !important;
+}

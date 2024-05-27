@@ -57,14 +57,14 @@ const TechnologyAdvance = () => {
     <div className="col-md-11 mx-auto">
       <br />
       <br />
-      <div className="col-md-11 mx-auto">
+      <div className=" mx-auto">
         <h3 className="fw-bold my-4 text-center">
           Technology Advances Are Making Tech More Human, Tech Is Everywhere But
           Innovation Is Somewhere. Innovate With ZSI.Ai
         </h3>
         <br />
       </div>
-      <div className="row mx-auto">
+      <div className="row mx-auto ">
         {data.map((item, index) => (
           <div key={index} className="col-md-3 my-1">
             <div className="cr-hver mx-2">

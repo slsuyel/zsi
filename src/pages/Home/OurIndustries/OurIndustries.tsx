@@ -65,6 +65,7 @@ const OurIndustries = () => {
         <Slider {...settings}>
           {data.map((d) => (
             <div
+              data-aos="fade-up"
               key={d.title}
               className="img-card-slick position-relative mx-auto"
             >
@@ -72,7 +73,9 @@ const OurIndustries = () => {
                 <img className="img-fluid " src={d.img} alt="" />
               </div>
               <div className="slick-content">
-                <h2 className="fw-bold my-3">{d.title}</h2>
+                <h2 className="fw-bold my-3" data-aos="zoom-out-up">
+                  {d.title}
+                </h2>
                 <h6 className="fs-5 fw-semibold">{d.decr}</h6>
               </div>
             </div>

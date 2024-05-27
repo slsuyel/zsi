@@ -1,8 +1,11 @@
 const DrivingGrowth = () => {
   return (
     <>
-      <div className="col-md-11  my-5 bg-primary  row mx-auto ">
-        <div className="col-md-6 px-2  ">
+      <div
+        data-aos="fade-up"
+        className="col-md-11  my-5 bg-primary  row mx-auto "
+      >
+        <div className="col-md-6 px-2  " data-aos="fade-down">
           <div className="p-3 mt-4">
             <h1 className="fw-bold text-white pt-2">
               {" "}
@@ -35,6 +38,7 @@ const DrivingGrowth = () => {
         <div className="col-md-6  px-0">
           <div>
             <img
+              data-aos="fade-up"
               draggable={false}
               className="img-fluid w-100 p-0"
               src="https://i.pinimg.com/originals/db/67/2d/db672d4449f18c6437074fe86ec7298a.gif"
@@ -47,7 +51,7 @@ const DrivingGrowth = () => {
       <br />
 
       <div className="col-md-11 make_ambition my-5  row mx-auto ">
-        <div className="col-md-6 px-2 ">
+        <div className="col-md-6 px-2 " data-aos="fade-up">
           <div className="p-3">
             <h1 className="fw-bold text-dark pt-2 mt-4 pe-5">
               Make an ambition for sustainable business
@@ -65,7 +69,7 @@ const DrivingGrowth = () => {
           </div>
         </div>
 
-        <div className="col-md-6  p-0">
+        <div className="col-md-6  p-0" data-aos="fade-up">
           <div>
             <img
               draggable={false}

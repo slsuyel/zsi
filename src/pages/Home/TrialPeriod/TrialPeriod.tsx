@@ -4,9 +4,14 @@ import { Link } from "react-router-dom";
 const TrialPeriod = () => {
   return (
     <>
-      <div className="row mx-auto col-md-11">
-        <div className="col-md-4 p-0 ">
+      <div
+        className="row mx-auto col-md-11"
+        data-aos="fade-up"
+        data-aos-duration="2000"
+      >
+        <div className="col-md-4 p-0">
           <img
+            data-aos="fade-down-right"
             className="w-100"
             height={300}
             src="https://giffiles.alphacoders.com/120/120251.gif"
@@ -29,7 +34,10 @@ const TrialPeriod = () => {
               elite teams from the ground up.
             </p>
             <br />
-            <div className="animated-gradient text-white rounded p-2">
+            <div
+              className="animated-gradient text-white rounded p-2"
+              data-aos="zoom-in-left"
+            >
               <h6 className="fs-4 fw-bold p-2 mb-0">ZERO-RISK TRIAL PERIOD </h6>
               <p className="fs-6 ps-2">
                 {" "}
@@ -41,9 +49,18 @@ const TrialPeriod = () => {
       </div>
 
       <br />
-      <div className="col-md-11 mx-auto  my-5">
+      <div
+        className="col-md-11 mx-auto  my-5"
+        data-aos="fade-up"
+        data-aos-duration="2000"
+      >
         <div className="row text-center mx-auto ">
-          <div className="col-md-4 mb-4">
+          <div
+            className="col-md-4 mb-4"
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500"
+          >
             <Card hoverable>
               <div className=" h-100 shadow-sm">
                 <div className="card-body">
@@ -61,7 +78,7 @@ const TrialPeriod = () => {
             </Card>
           </div>
 
-          <div className="col-md-4 mb-4">
+          <div className="col-md-4 mb-4" data-aos="zoom-out-up">
             <Card hoverable>
               <div className=" h-100 shadow-sm">
                 <div className="card-body">
@@ -79,7 +96,12 @@ const TrialPeriod = () => {
             </Card>
           </div>
 
-          <div className="col-md-4 mb-4">
+          <div
+            className="col-md-4 mb-4"
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500"
+          >
             <Card hoverable>
               <div className=" h-100 shadow-sm">
                 <div className="card-body">
@@ -96,7 +118,11 @@ const TrialPeriod = () => {
             </Card>
           </div>
           <div>
-            <Link to={"/contact-us"} className="start_onboarding">
+            <Link
+              data-aos="zoom-in"
+              to={"/contact-us"}
+              className="start_onboarding"
+            >
               Start onboarding
             </Link>
           </div>
@@ -106,6 +132,8 @@ const TrialPeriod = () => {
       <br />
 
       <div
+        data-aos="fade-up"
+        data-aos-duration="2000"
         className="col-md-11  my-5 row mx-auto "
         style={{ background: "rgb(110 96 254)" }}
       >

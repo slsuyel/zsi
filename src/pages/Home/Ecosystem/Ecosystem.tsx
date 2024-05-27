@@ -52,7 +52,7 @@ const Ecosystem = () => {
       <div className="mx-auto row animated-gradient">
         <div className="col-md-6 p-3 text-white">
           <div className="m-3 p-3">
-            <h2 className="mt-4">
+            <h2 className="mt-4" data-aos="fade-up-right">
               Reinventing means pushing the limits of possibility and protection
               for a better, stronger and safer tomorrow.
             </h2>
@@ -110,7 +110,11 @@ const Ecosystem = () => {
       <br />
       <br />
 
-      <div className=" col-md-11 mx-auto my-5">
+      <div
+        className=" col-md-11 mx-auto my-5"
+        data-aos="fade-up"
+        data-aos-duration="2000"
+      >
         <div className="px-2">
           <h1 className="fw-bold my-4">Our Ecosystem</h1>
           <h6 className="fs-5">
@@ -124,6 +128,9 @@ const Ecosystem = () => {
         <div className="d-flex flex-wrap gap-2 justify-content-center ">
           {data.map((i) => (
             <img
+              data-aos="fade-down"
+              data-aos-easing="linear"
+              data-aos-duration="500"
               className="border p-1 my-2"
               key={i}
               width={150}
@@ -136,7 +143,11 @@ const Ecosystem = () => {
       </div>
 
       <br />
-      <div className="mx-auto row animated-gradient">
+      <div
+        className="mx-auto row animated-gradient"
+        data-aos="fade-up"
+        data-aos-duration="2000"
+      >
         <div className="col-md-6 p-0">
           <img
             src={bnr}

@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 
 const SendRequest = () => {
   return (
-    <div className="bg-primary my-5">
-      <div className="row mx-auto p-3">
+    <div className="bg-primary my-5" data-aos="fade-up">
+      <div className="row mx-auto p-3 w-100">
         <div className=" col-md-6">
           <form className="p-4 rounded  text-white">
             <div className="row">
@@ -12,6 +12,7 @@ const SendRequest = () => {
                   Full Name
                 </label>
                 <input
+                  data-aos="fade-up"
                   type="text"
                   className="form-control p-2 "
                   id="fullname"
@@ -23,6 +24,7 @@ const SendRequest = () => {
                   E-mail
                 </label>
                 <input
+                  data-aos="fade-up"
                   type="email"
                   className="form-control p-2 "
                   id="email"
@@ -37,6 +39,7 @@ const SendRequest = () => {
                   Phone number
                 </label>
                 <input
+                  data-aos="fade-up"
                   type="tel"
                   className="form-control p-2 "
                   id="phone"
@@ -48,6 +51,7 @@ const SendRequest = () => {
                   Company
                 </label>
                 <input
+                  data-aos="fade-up"
                   type="text"
                   className="form-control p-2 "
                   id="company"
@@ -60,6 +64,7 @@ const SendRequest = () => {
                 How can we help you?
               </label>
               <textarea
+                // data-aos="zoom-in"
                 className="form-control p-2 "
                 id="message"
                 placeholder="How can we help you?"
@@ -69,7 +74,12 @@ const SendRequest = () => {
               <label htmlFor="file" className="form-label">
                 Choose File
               </label>
-              <input type="file" className="form-control p-2 " id="file" />
+              <input
+                type="file"
+                data-aos="zoom-out"
+                className="form-control p-2 "
+                id="file"
+              />
             </div>
             <div className=" mb-2 ">
               <small className="form-text text-white ">
@@ -81,7 +91,13 @@ const SendRequest = () => {
                 for the purpose of providing you appropriate information.
               </small>
             </div>
-            <button type="submit" className="btn btn-light">
+            <button
+              type="submit"
+              className="btn btn-light"
+              data-aos="fade-down"
+              data-aos-easing="linear"
+              data-aos-duration="500"
+            >
               Send Request
             </button>
           </form>
@@ -89,12 +105,12 @@ const SendRequest = () => {
         <div className="col-md-6">
           <div className="mt-4 text-white ">
             <div className="mt-2">
-              <h2 className="fw-bold my-5">
+              <h2 className="fw-bold my-5" data-aos="fade-up">
                 Let’s Reinvent Something Great Together.
               </h2>
             </div>
             <div className="my-5">
-              <p className="fs-5">
+              <p className="fs-5" data-aos="fade-up">
                 We believe in turning ideas into reality and we’re ready to join
                 your journey. Reach out to us and let’s start discussing your
                 project.
@@ -102,7 +118,7 @@ const SendRequest = () => {
             </div>
 
             <div>
-              <h3> Want to experience our services?</h3>
+              <h3 data-aos="fade-up"> Want to experience our services?</h3>
               <Link to={""} className="fs-6 text-white">
                 Explore options
               </Link>

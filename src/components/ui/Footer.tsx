@@ -1,7 +1,11 @@
 import logo from "../../assets/images/logo-1.png";
 const Footer = () => {
   return (
-    <footer className="new_footer_area bg_color">
+    <footer
+      className="new_footer_area bg_color"
+      data-aos="fade-up"
+      data-aos-duration="2000"
+    >
       <div
         className="py-5 px-2 border-bottom"
         style={{ background: "#1C1324" }}

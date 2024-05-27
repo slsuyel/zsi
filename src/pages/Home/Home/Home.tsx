@@ -12,6 +12,7 @@ const Home = () => {
   return (
     <div>
       <Banner />
+
       <SendRequest />
       <DrivingGrowth />
       <TrialPeriod />
