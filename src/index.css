@@ -9,7 +9,6 @@ body {
 
 .header-bg {
     background-color: rgb(96, 34, 135);
-
 }
 
 .header_shadow {
@@ -26,4 +25,12 @@ body {
 .blue-hr {
     border: 2px solid blue;
     opacity: 1;
+}
+
+
+.custom_container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }

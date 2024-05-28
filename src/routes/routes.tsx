@@ -11,6 +11,7 @@ import Errorpage from "@/components/ui/Errorpage";
 import Login from "@/pages/auth/Login";
 import Register from "@/pages/auth/Register";
 import News from "@/pages/News/News";
+import Loader from "@/components/ui/Loader";
 
 const router = createBrowserRouter([
   {
@@ -54,6 +55,10 @@ const router = createBrowserRouter([
       {
         path: "/news",
         element: <News />,
+      },
+      {
+        path: "/loader",
+        element: <Loader />,
       },
     ],
   },

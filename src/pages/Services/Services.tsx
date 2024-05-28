@@ -12,6 +12,8 @@ import ui from "../../assets/videos/uIUX-Design.mp4";
 import web from "../../assets/videos/web-App-Development.mp4";
 import cyber from "../../assets/videos/cybersecurity-Services.mp4";
 import digital from "../../assets/videos/digital-Transformation.mp4";
+import Commitment from "./Commitment";
+import ProjectRequest from "./ProjectRequest";
 
 const Services = () => {
   const data = [
@@ -205,10 +207,12 @@ const Services = () => {
   ];
 
   return (
-    <div>
+    <>
       <ServicePageBanner />
       <ServiceCard data={data} />
-    </div>
+      <Commitment />
+      <ProjectRequest />
+    </>
   );
 };
 

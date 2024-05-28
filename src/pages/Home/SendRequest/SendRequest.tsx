@@ -1,3 +1,4 @@
+import CircleAnimation from "@/components/reusable/CircleAnimation";
 import { Link } from "react-router-dom";
 
 const SendRequest = () => {
@@ -126,6 +127,7 @@ const SendRequest = () => {
           </div>
         </div>
       </div>
+      <CircleAnimation />
     </div>
   );
 };

@@ -19,7 +19,7 @@ const ServiceCard = ({ data }: ServiceListProps) => {
               ["one", "two", "three", "four"][index % 4]
             }`}
           >
-            <div className="row mx-auto container">
+            <div className="row mx-auto col-md-11 ">
               <div className={`col-md-6 my-2 order-${index % 2 === 0 ? 1 : 2}`}>
                 <div className="video_container mt-2">
                   <video

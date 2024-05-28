@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import brn from "../../assets/gifs/service-page-banner-zsi.gif";
+import CircleAnimation from "@/components/reusable/CircleAnimation";
 
 const ServicePageBanner = () => {
   const words = [
@@ -66,8 +67,8 @@ const ServicePageBanner = () => {
   return (
     <div data-aos="fade-up" data-aos-duration="2000">
       <h1
-        style={{ color: "#8938E5" }}
-        className="fs-4 fw-bolder py-3 text-center"
+        style={{ color: "#8938E5", fontWeight: 900 }}
+        className="fs-3  py-3 text-center"
       >
         WHAT WE DO
       </h1>
@@ -100,6 +101,7 @@ const ServicePageBanner = () => {
             <img draggable={false} className="img-fluid " src={brn} alt="" />
           </div>
         </div>
+        <CircleAnimation />
 
         <div className="py-4" style={{ background: "#1C1324" }}>
           <div
