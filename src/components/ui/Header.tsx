@@ -66,7 +66,7 @@ const Header = () => {
     {
       id: 6,
       label: "Contact us",
-      link: "/contact-us",
+      link: "/contact",
     },
   ];
 

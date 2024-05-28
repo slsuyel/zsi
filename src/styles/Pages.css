@@ -358,19 +358,10 @@
 
 
 
+/* time line */
 
 
-
-
-
-
-
-
-
-
-
-
-
+/* time line end */
 
 
 
@@ -381,6 +372,19 @@
 /* --------------- */
 
 @media (max-width: 768px) {
+    .scrl-h2-tx1 {
+
+        font-size: 25px;
+        font-weight: 800;
+
+    }
+
+    .scrl-h2-tx2 {
+
+        font-size: 25px;
+        font-weight: 800;
+
+    }
 
     .video-container-ecosystem {
         height: 200px;
@@ -573,6 +577,8 @@ h1.service-reqqq {
         height: auto !important;
     }
 }
+
+
 
 
 
