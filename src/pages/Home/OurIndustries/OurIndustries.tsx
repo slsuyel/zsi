@@ -70,7 +70,7 @@ const OurIndustries = () => {
               className="img-card-slick position-relative mx-auto"
             >
               <div className="img-wrapper ">
-                <img className="img-fluid " src={d.img} alt="" />
+                <img loading="lazy" className="img-fluid " src={d.img} alt="" />
               </div>
               <div className="slick-content">
                 <h2 className="fw-bold my-3" data-aos="zoom-out-up">

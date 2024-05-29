@@ -119,6 +119,7 @@ const TechVision = () => {
         </div>
         <div className="col-md-6 p-0">
           <img
+            loading="lazy"
             src={img}
             alt=""
             className="w-100 p-0"

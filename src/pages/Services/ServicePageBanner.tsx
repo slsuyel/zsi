@@ -98,7 +98,13 @@ const ServicePageBanner = () => {
             </div>
           </div>
           <div className="col-md-6 pe-0">
-            <img draggable={false} className="img-fluid " src={brn} alt="" />
+            <img
+              loading="lazy"
+              draggable={false}
+              className="img-fluid "
+              src={brn}
+              alt=""
+            />
           </div>
         </div>
         <CircleAnimation />

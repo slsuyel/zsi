@@ -94,6 +94,7 @@ const OurExpertise = () => {
                 <div className="bg-white img-wrap rounded">
                   {" "}
                   <img
+                    loading="lazy"
                     key={idx}
                     src={icon}
                     alt=""

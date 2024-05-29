@@ -317,7 +317,7 @@
     background-color: green;
 }
 
-a.view_btn {
+.view_btn {
     background: #0947d3fc;
     text-decoration: none;
     color: white;
@@ -328,8 +328,10 @@ a.view_btn {
 /* Mobile CSS */
 @media (max-width: 768px) {
     .slideC {
+
         width: 90vw;
         height: 40vh;
+        overflow: hidden;
     }
 
     .sliderContent {
@@ -355,7 +357,7 @@ a.view_btn {
         margin: 3px;
     }
 
-    a.view_btn {
+    .view_btn {
         padding: 2px 6px;
         font-size: 14px;
     }
@@ -364,6 +366,7 @@ a.view_btn {
 /* Further adjustments for very small screens */
 @media (max-width: 480px) {
     .slideC {
+        overflow: hidden;
         width: 100vw;
         height: 30vh;
     }
@@ -388,8 +391,41 @@ a.view_btn {
         font-size: 12px;
     }
 
-    a.view_btn {
+    .view_btn {
         padding: 1px 4px;
         font-size: 12px;
     }
+}
+
+.about-g-mark h2 {
+    color: #FFFFFF;
+    font-size: 37px;
+    font-weight: 700;
+    line-height: 49px;
+    padding: 3px 34px;
+}
+
+.about-g-mark p {
+    color: white;
+    font-size: 19px;
+    padding: 0 38px;
+    line-height: 34px;
+    font-weight: 400;
+}
+
+.percentage-of-people h3 {
+    font-weight: 900;
+    font-size: 38px;
+}
+
+.percentage-of-people p {
+    font-size: 17px
+}
+
+.percentage-of-people .bbb {
+    border-top: solid;
+    border-width: 3px;
+    border-image: linear-gradient(to right, red, #7929ba);
+    border-image-slice: 1;
+    padding-top: 2px;
 }

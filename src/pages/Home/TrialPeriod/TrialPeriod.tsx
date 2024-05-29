@@ -11,6 +11,7 @@ const TrialPeriod = () => {
       >
         <div className="col-md-4 p-0">
           <img
+            loading="lazy"
             data-aos="fade-down-right"
             className="w-100"
             height={300}
@@ -140,6 +141,7 @@ const TrialPeriod = () => {
         <div className="col-md-6  px-0">
           <div>
             <img
+              loading="lazy"
               draggable={false}
               className="img-fluid w-100 p-0"
               src="https://cdn.dribbble.com/users/2514124/screenshots/6565372/first_work_1.gif"

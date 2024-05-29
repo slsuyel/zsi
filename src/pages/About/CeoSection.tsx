@@ -36,7 +36,13 @@ const CeoSection = () => {
 
               <div className="border col-md-10 d-flex justify-content-between bg-white rounded-1 mt-5 mx-auto">
                 <div>
-                  <img width={150} height={150} src={ceo} alt="" />
+                  <img
+                    loading="lazy"
+                    width={150}
+                    height={150}
+                    src={ceo}
+                    alt=""
+                  />
                 </div>
 
                 <div className="p-3">
@@ -57,7 +63,13 @@ const CeoSection = () => {
 
               <div className="border col-md-10 d-flex justify-content-between bg-white rounded-1 mt-5 mx-auto">
                 <div>
-                  <img width={150} height={150} src={cto} alt="" />
+                  <img
+                    loading="lazy"
+                    width={150}
+                    height={150}
+                    src={cto}
+                    alt=""
+                  />
                 </div>
 
                 <div className="p-4">

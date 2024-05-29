@@ -71,6 +71,7 @@ const TechnologyAdvance = () => {
               <a href="#">
                 <div className="show">
                   <img
+                    loading="lazy"
                     src={item.img}
                     className=""
                     style={{ maxHeight: "320px", objectFit: "cover" }}

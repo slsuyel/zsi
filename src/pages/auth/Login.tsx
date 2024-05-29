@@ -21,7 +21,7 @@
 //       <div className="col-md-4 mx-auto my-5">
 //         <div className="p-3 w-100 mx-auto border-0 card  shadow-lg text-info-emphasis">
 //           <div className="text-center">
-//             <img
+//             <img loading="lazy"
 //               style={{ height: 80 }}
 //               src="https://cdn.pixabay.com/photo/2018/08/20/17/04/wedding-3619423_1280.png"
 //               alt="Logo"

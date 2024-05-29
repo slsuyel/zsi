@@ -38,6 +38,7 @@ const DrivingGrowth = () => {
         <div className="col-md-6  px-0">
           <div>
             <img
+              loading="lazy"
               data-aos="fade-up"
               draggable={false}
               className="img-fluid w-100 p-0"
@@ -72,6 +73,7 @@ const DrivingGrowth = () => {
         <div className="col-md-6  p-0" data-aos="fade-up">
           <div>
             <img
+              loading="lazy"
               draggable={false}
               className="img-fluid w-100 p-0"
               src="https://zsi.ai/wp-content/uploads/2024/03/Sustainable.jpg"

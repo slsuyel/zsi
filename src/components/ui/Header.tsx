@@ -81,7 +81,7 @@ const Header = () => {
       >
         <Container>
           <Navbar.Brand href="/" className="p-0 ">
-            <img src={logo} alt="" width={200} />
+            <img loading="lazy" src={logo} alt="" width={200} />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse
@@ -105,7 +105,7 @@ const Header = () => {
         <>
           <div className=" align-items-center d-flex justify-content-between p-2 bg-dark ">
             <Navbar.Brand href="/" className="p-1 ">
-              <img src={logo} alt="" width={100} />
+              <img loading="lazy" src={logo} alt="" width={100} />
             </Navbar.Brand>
             <Button type="primary" className="rounded-0 " onClick={showDrawer}>
               <MenuOutlined />

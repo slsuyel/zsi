@@ -58,7 +58,7 @@ const ServiceCard = () => {
               <div className="card-body ">
                 {/* <i className={data.icon + " fa-3x mb-3"}></i> */}
                 <div className="my-3">
-                  <img src={data.img} alt="" width={80} />
+                  <img loading="lazy" src={data.img} alt="" width={80} />
                 </div>
                 <div className="my-2">
                   <h5 className="card-title">{data.title}</h5>

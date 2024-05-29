@@ -13,6 +13,7 @@ const Footer = () => {
         <div className="row mx-auto">
           <div className="col-md-3 px-2">
             <img
+              loading="lazy"
               src={logo}
               className="img-fluid"
               alt="Company Logo"

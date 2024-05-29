@@ -128,6 +128,7 @@ const Ecosystem = () => {
         <div className="d-flex flex-wrap gap-2 justify-content-center ">
           {data.map((i) => (
             <img
+              loading="lazy"
               data-aos="fade-down"
               data-aos-easing="linear"
               data-aos-duration="500"
@@ -150,6 +151,7 @@ const Ecosystem = () => {
       >
         <div className="col-md-6 p-0">
           <img
+            loading="lazy"
             src={bnr}
             alt=""
             className="img-fluid"

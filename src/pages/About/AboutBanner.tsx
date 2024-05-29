@@ -84,6 +84,7 @@ const AboutBanner = () => {
         >
           <div className="col-md-6 p-0">
             <img
+              loading="lazy"
               src={img}
               alt=""
               className="img-fluid"

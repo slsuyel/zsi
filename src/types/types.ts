@@ -49,6 +49,8 @@ export interface ClientData {
   id: number;
   icon: React.ReactNode;
   title: string;
+  position: string;
+  url: string;
   desc: string;
   bgColor: string;
 }
