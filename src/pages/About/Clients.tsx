@@ -90,7 +90,7 @@ const Clients = (props: ClientsProps) => {
         ))}
       </div>
 
-      <div className="d-flex justify-content-center mt-5">
+      <div className="d-flex justify-content-center mt-5 mb-2">
         <button onClick={prev} className="button-prevs">
           <i className="fas fa-arrow-left"></i>
         </button>
