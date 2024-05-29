@@ -357,12 +357,11 @@
 
 
 
-
-/* time line */
-
-
-/* time line end */
-
+.ceo_info p {
+    font-size: 18px;
+    font-weight: 500;
+    text-align: justify;
+}
 
 
 

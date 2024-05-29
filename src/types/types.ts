@@ -44,3 +44,11 @@ export type ServicesProps = {
   services: string[];
   video: string;
 };
+
+export interface ClientData {
+  id: number;
+  icon: React.ReactNode;
+  title: string;
+  desc: string;
+  bgColor: string;
+}

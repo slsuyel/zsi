@@ -239,3 +239,90 @@
     text-align: center;
     opacity: .9;
 }
+
+
+
+/*  */
+/* Adjust container to ensure it centers properly */
+.slideC {
+    position: relative;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    width: 50vw;
+    /* Take half of the viewport width */
+    height: 50vh;
+    /* Take half of the viewport height */
+    margin: 0 auto;
+}
+
+/* Adjust slide size and position */
+.slide {
+    width: 100%;
+    height: 100%;
+    transition: transform 500ms ease 0s, opacity 500ms ease 0s, visibility 500ms ease 0s;
+    position: absolute;
+    top: 0;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Adjust reflection size and position */
+.reflection {
+    position: absolute;
+    width: 100%;
+    height: 15%;
+    /* Adjusted to 15% of the slide height */
+    bottom: -15%;
+    border-radius: 12px;
+    transition: transform 500ms ease 0s, opacity 500ms ease 0s, visibility 500ms ease 0s;
+}
+
+/* Styling for slider content */
+.sliderContent {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 30px;
+    align-items: flex-start;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.sliderContent h2 {
+    margin: 16px 0;
+}
+
+.sliderContent p {
+    margin: 0;
+    margin-bottom: 16px;
+}
+
+/* styles.css */
+
+.button-prevs,
+.button-nexts {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+.button-prevs {
+    background-color: blue;
+}
+
+.button-nexts {
+    background-color: green;
+}
+
+a.view_btn {
+    background: #0947d3fc;
+    text-decoration: none;
+    color: white;
+    padding: 3px 8px;
+    border-radius: 6px;
+}
