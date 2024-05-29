@@ -244,18 +244,16 @@
 
 /*  */
 /* Adjust container to ensure it centers properly */
+
 .slideC {
     position: relative;
     perspective: 1000px;
     transform-style: preserve-3d;
     width: 50vw;
-    /* Take half of the viewport width */
     height: 50vh;
-    /* Take half of the viewport height */
     margin: 0 auto;
 }
 
-/* Adjust slide size and position */
 .slide {
     width: 100%;
     height: 100%;
@@ -268,7 +266,7 @@
     align-items: center;
 }
 
-/* Adjust reflection size and position */
+
 .reflection {
     position: absolute;
     width: 100%;
@@ -279,7 +277,7 @@
     transition: transform 500ms ease 0s, opacity 500ms ease 0s, visibility 500ms ease 0s;
 }
 
-/* Styling for slider content */
+
 .sliderContent {
     display: flex;
     flex-direction: column;
@@ -325,4 +323,73 @@ a.view_btn {
     color: white;
     padding: 3px 8px;
     border-radius: 6px;
+}
+
+/* Mobile CSS */
+@media (max-width: 768px) {
+    .slideC {
+        width: 90vw;
+        height: 40vh;
+    }
+
+    .sliderContent {
+        padding: 15px;
+    }
+
+    .sliderContent h2 {
+        margin: 8px 0;
+        font-size: 1.5rem;
+        /* Adjust font size for mobile */
+    }
+
+    .sliderContent p {
+        margin-bottom: 8px;
+        font-size: 1rem;
+        /* Adjust font size for mobile */
+    }
+
+    .button-prevs,
+    .button-nexts {
+        padding: 8px 16px;
+        font-size: 14px;
+        margin: 3px;
+    }
+
+    a.view_btn {
+        padding: 2px 6px;
+        font-size: 14px;
+    }
+}
+
+/* Further adjustments for very small screens */
+@media (max-width: 480px) {
+    .slideC {
+        width: 100vw;
+        height: 30vh;
+    }
+
+    .sliderContent {
+        padding: 10px;
+    }
+
+    .sliderContent h2 {
+        font-size: 1.2rem;
+        /* Further adjust font size for smaller screens */
+    }
+
+    .sliderContent p {
+        font-size: 0.9rem;
+        /* Further adjust font size for smaller screens */
+    }
+
+    .button-prevs,
+    .button-nexts {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+
+    a.view_btn {
+        padding: 1px 4px;
+        font-size: 12px;
+    }
 }

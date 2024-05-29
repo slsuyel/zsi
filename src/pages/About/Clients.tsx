@@ -2,10 +2,12 @@ import { ClientData } from "@/types/types";
 import React from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+
 interface ClientsProps {
   data: ClientData[];
   activeSlide: number;
 }
+
 const Clients = (props: ClientsProps) => {
   const [activeSlide, setactiveSlide] = useState(props.activeSlide);
 
@@ -59,6 +61,13 @@ const Clients = (props: ClientsProps) => {
       };
   };
 
+  const nextSlideBgColor =
+    activeSlide < props.data.length - 1
+      ? props.data[activeSlide + 1].bgColor
+      : "#ccc"; // Default color if there's no next slide
+  const prevSlideBgColor =
+    activeSlide > 0 ? props.data[activeSlide - 1].bgColor : "#ccc"; // Default color if there's no previous slide
+
   return (
     <>
       <div className="container mt-5">
@@ -90,11 +99,19 @@ const Clients = (props: ClientsProps) => {
         ))}
       </div>
 
-      <div className="d-flex justify-content-center mt-5 mb-2">
-        <button onClick={prev} className="button-prevs">
+      <div className="d-flex justify-content-center mt-5">
+        <button
+          onClick={prev}
+          className="button-prevs"
+          style={{ backgroundColor: prevSlideBgColor }}
+        >
           <i className="fas fa-arrow-left"></i>
         </button>
-        <button onClick={next} className="button-nexts">
+        <button
+          onClick={next}
+          className="button-nexts"
+          style={{ backgroundColor: nextSlideBgColor }}
+        >
           <i className="fas fa-arrow-right"></i>
         </button>
       </div>
