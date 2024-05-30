@@ -58,11 +58,11 @@ const Header = () => {
       label: "Careers",
       link: "/careers",
     },
-    {
-      id: 5,
-      label: "News",
-      link: "/news",
-    },
+    // {
+    //   id: 5,
+    //   label: "News",
+    //   link: "/news",
+    // },
     {
       id: 6,
       label: "Contact us",

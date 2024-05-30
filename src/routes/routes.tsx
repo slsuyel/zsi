@@ -12,6 +12,7 @@ import Login from "@/pages/auth/Login";
 import Register from "@/pages/auth/Register";
 import News from "@/pages/News/News";
 import Loader from "@/components/ui/Loader";
+import SingleJobs from "@/pages/Career/SingleJobs";
 
 const router = createBrowserRouter([
   {
@@ -51,6 +52,10 @@ const router = createBrowserRouter([
       {
         path: "/careers",
         element: <Career />,
+      },
+      {
+        path: "/job-view",
+        element: <SingleJobs />,
       },
       {
         path: "/news",

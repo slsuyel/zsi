@@ -577,7 +577,20 @@ h1.service-reqqq {
     }
 }
 
+.career_page_banner h1 {
+    color: #000000;
+    font-weight: 700;
+    font-size: 52px;
+}
 
+.career_page_banner p {
+    font-size: 20px;
+    border-top: solid;
+    border-width: 5px;
+    border-image: linear-gradient(to right, red, #7929ba);
+    border-image-slice: 1;
+    padding-top: 2px;
+}
 
 
 
