@@ -1,6 +1,9 @@
-import CareerBanner from "./CareerBanner";
-import JobCard from "./JobCard";
-import "./Career.css";
+import CareerBanner from './CareerBanner';
+import JobCard from './JobCard';
+import './Career.css';
+import ExploreJobs from './ExploreJobs';
+import Perks from './Perks';
+import Process from './Process';
 const Career = () => {
   const data = [1, 2, 3, 4];
 
@@ -8,9 +11,12 @@ const Career = () => {
     <>
       <CareerBanner />
 
-      <div style={{ background: "#e7ebed75" }}>
+      <ExploreJobs />
+      <Perks />
+      <Process />
+      <div style={{ background: '#e7ebed75' }}>
         <div className="job-cards  row mx-auto custom_container">
-          {data.map((index) => (
+          {data.map(index => (
             <div key={index + 1} className="col-md-4 my-2">
               <JobCard />
             </div>

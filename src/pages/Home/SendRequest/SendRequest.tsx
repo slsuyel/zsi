@@ -1,10 +1,9 @@
-import CircleAnimation from "@/components/reusable/CircleAnimation";
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
 const SendRequest = () => {
   return (
     <div className="bg-primary my-5" data-aos="fade-up">
-      <div className="row mx-auto p-3 w-100">
+      <div className="row mx-auto p-3 col-md-11">
         <div className=" col-md-6">
           <form className="p-4 rounded  text-white">
             <div className="row">
@@ -18,7 +17,7 @@ const SendRequest = () => {
                   className="form-control p-2 "
                   id="fullname"
                   placeholder="Full Name"
-                />{" "}
+                />{' '}
               </div>
               <div className="mb-3 col-md-6">
                 <label htmlFor="email" className="form-label">
@@ -85,10 +84,10 @@ const SendRequest = () => {
             <div className=" mb-2 ">
               <small className="form-text text-white ">
                 Please be informed that when you click the Send button ZSI will
-                process your personal data in accordance with our{" "}
+                process your personal data in accordance with our{' '}
                 <a href="#" className="text-light">
                   Privacy notice
-                </a>{" "}
+                </a>{' '}
                 for the purpose of providing you appropriate information.
               </small>
             </div>
@@ -120,14 +119,14 @@ const SendRequest = () => {
 
             <div>
               <h3 data-aos="fade-up"> Want to experience our services?</h3>
-              <Link to={""} className="fs-6 text-white">
+              <Link to={''} className="fs-6 text-white">
                 Explore options
               </Link>
             </div>
           </div>
         </div>
       </div>
-      <CircleAnimation />
+      {/* <CircleAnimation /> */}
     </div>
   );
 };
