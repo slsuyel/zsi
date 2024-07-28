@@ -1,11 +1,11 @@
-import Container from "react-bootstrap/Container";
-import logo from "../../assets/images/logo-1.png";
-import Navbar from "react-bootstrap/Navbar";
-import "../../styles/Pages.css";
-import { NavLink } from "react-router-dom";
-import { useEffect, useState } from "react";
-import { Button, Drawer } from "antd";
-import { MenuOutlined } from "@ant-design/icons";
+import Container from 'react-bootstrap/Container';
+import logo from '../../assets/images/logo-1.png';
+import Navbar from 'react-bootstrap/Navbar';
+import '../../styles/Pages.css';
+import { NavLink } from 'react-router-dom';
+import { useEffect, useState } from 'react';
+import { Button, Drawer } from 'antd';
+import { MenuOutlined } from '@ant-design/icons';
 
 const Header = () => {
   const [isFixed, setIsFixed] = useState(false);
@@ -29,34 +29,34 @@ const Header = () => {
     const handleResize = () => {
       setIsMobile(window.innerWidth <= 768);
     };
-    window.addEventListener("scroll", handleScroll);
-    window.addEventListener("resize", handleResize);
+    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('resize', handleResize);
     handleResize();
     return () => {
-      window.removeEventListener("scroll", handleScroll);
-      window.removeEventListener("resize", handleResize);
+      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('resize', handleResize);
     };
   }, []);
   const menuItems = [
     {
       id: 1,
-      label: "What we do",
-      link: "/services",
+      label: 'What we do',
+      link: '/services',
     },
     {
       id: 2,
-      label: "Technology",
-      link: "/technology",
+      label: 'Technology',
+      link: '/technology',
     },
     {
       id: 3,
-      label: "Who we are",
-      link: "/who-we-are",
+      label: 'Who we are',
+      link: '/who-we-are',
     },
     {
       id: 4,
-      label: "Careers",
-      link: "/careers",
+      label: 'Careers',
+      link: '/careers',
     },
     // {
     //   id: 5,
@@ -65,8 +65,8 @@ const Header = () => {
     // },
     {
       id: 6,
-      label: "Contact us",
-      link: "/contact",
+      label: 'Contact us',
+      link: '/contact',
     },
   ];
 
@@ -74,10 +74,10 @@ const Header = () => {
     <>
       <Navbar
         expand="lg"
-        fixed={isFixed ? "top" : undefined}
+        fixed={isFixed ? 'top' : undefined}
         className={`header_shadow py-3 mx-auto  ${
-          isFixed ? "fix-bg " : "animated-gradient "
-        } ${isMobile ? "d-none" : "d-block"}`}
+          isFixed ? 'fix-bg ' : 'animated-gradient '
+        } ${isMobile ? 'd-none' : 'd-block'}`}
       >
         <Container>
           <Navbar.Brand href="/" className="p-0 ">
@@ -88,11 +88,16 @@ const Header = () => {
             id="basic-navbar-nav "
             className="justify-content-end fs-5 fw-semibold gap-3"
           >
-            {menuItems.map((item) => (
+            {menuItems.map(item => (
               <NavLink
                 key={item.id}
                 to={item.link}
-                className="nav-link text-white"
+                // className="nav-link text-white"
+                className={`${
+                  item.link === '/contact'
+                    ? 'active bg-primary  nav-link px-3 py-1 rounded-5 shadow-sm text-white'
+                    : 'nav-link text-white'
+                }`}
               >
                 {item.label}
               </NavLink>
@@ -113,12 +118,12 @@ const Header = () => {
           </div>
 
           <Drawer
-            style={{ backgroundColor: "#be93b6", width: "60%" }}
+            style={{ backgroundColor: '#be93b6', width: '60%' }}
             placement="left"
             onClose={onClose}
             open={MobileMenu}
           >
-            {menuItems.map((item) => (
+            {menuItems.map(item => (
               <NavLink
                 key={item.id}
                 to={item.link}
