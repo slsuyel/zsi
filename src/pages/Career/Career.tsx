@@ -4,6 +4,7 @@ import './Career.css';
 import ExploreJobs from './ExploreJobs';
 import Perks from './Perks';
 import Process from './Process';
+import ContactForm from '../Contact/ContactForm';
 const Career = () => {
   const data = [1, 2, 3, 4];
 
@@ -23,6 +24,8 @@ const Career = () => {
           ))}
         </div>
       </div>
+
+      <ContactForm />
     </>
   );
 };

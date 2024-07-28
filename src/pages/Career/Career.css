@@ -1106,3 +1106,6 @@
 /* ---------------------- */
 /* selection process end */
 /* ---------------------- */
+.ct-icon-container svg {
+  fill: white; /* Ensures the icon color is white */
+}
