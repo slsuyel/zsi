@@ -1,31 +1,31 @@
-import { useState } from "react";
-import { Modal } from "antd";
-import img1_png from "../../../assets/ecosystem/a (1).png";
-import img1_webp from "../../../assets/ecosystem/a (1).webp";
-import img2_png from "../../../assets/ecosystem/a (2).png";
-import img2_webp from "../../../assets/ecosystem/a (2).webp";
-import img3_png from "../../../assets/ecosystem/a (3).png";
-import img3_webp from "../../../assets/ecosystem/a (3).webp";
-import img4_png from "../../../assets/ecosystem/a (4).png";
-import img4_webp from "../../../assets/ecosystem/a (4).webp";
-import img5_png from "../../../assets/ecosystem/a (5).png";
-import img5_webp from "../../../assets/ecosystem/a (5).webp";
-import img6_webp from "../../../assets/ecosystem/a (6).webp";
-import img7_webp from "../../../assets/ecosystem/a (7).webp";
-import img8_webp from "../../../assets/ecosystem/a (8).webp";
-import img9_webp from "../../../assets/ecosystem/a (9).webp";
-import bnr from "../../../assets/images/zsi-banner.jpg";
+import { useState } from 'react';
+import { Modal } from 'antd';
+import img1_png from '../../../assets/ecosystem/ad.webp';
+import img1_webp from '../../../assets/ecosystem/aw.webp';
+import img2_png from '../../../assets/ecosystem/ch.png';
+import img2_webp from '../../../assets/ecosystem/cr.png';
+import img3_png from '../../../assets/ecosystem/fo.png';
+import img3_webp from '../../../assets/ecosystem/go.webp';
+import img4_png from '../../../assets/ecosystem/ms.webp';
+import img4_webp from '../../../assets/ecosystem/no.png';
+
+import img5_webp from '../../../assets/ecosystem/or.webp';
+import img6_webp from '../../../assets/ecosystem/sa.webp';
+import img7_webp from '../../../assets/ecosystem/sap.webp';
+import img8_webp from '../../../assets/ecosystem/se.webp';
+import img9_webp from '../../../assets/ecosystem/wo.webp';
+import bnr from '../../../assets/images/zsi-banner.jpg';
 
 const Ecosystem = () => {
   const [isModalVisible, setIsModalVisible] = useState(false);
-  const [url, setUrl] = useState("");
+  const [url, setUrl] = useState('');
 
   const data = [
     img1_png,
     img2_png,
     img3_png,
     img4_png,
-    img5_png,
+
     img1_webp,
     img2_webp,
     img3_webp,
@@ -38,13 +38,13 @@ const Ecosystem = () => {
   ];
 
   const showModal = () => {
-    setUrl("https://www.youtube.com/embed/32IFthr0bUE");
+    setUrl('https://www.youtube.com/embed/32IFthr0bUE');
     setIsModalVisible(true);
   };
 
   const handleCancel = () => {
     setIsModalVisible(false);
-    setUrl("");
+    setUrl('');
   };
 
   return (
@@ -58,9 +58,9 @@ const Ecosystem = () => {
             </h2>
             <p
               style={{
-                fontSize: "19px",
-                lineHeight: "28px",
-                marginTop: "43px",
+                fontSize: '19px',
+                lineHeight: '28px',
+                marginTop: '43px',
               }}
             >
               Innovations in digital technologies, data and AI are changing
@@ -82,7 +82,7 @@ const Ecosystem = () => {
             <div className="play-btn-eco" onClick={showModal}>
               <i
                 className="fa-solid fa-play text-white "
-                style={{ fontSize: "48px" }}
+                style={{ fontSize: '48px' }}
               ></i>
             </div>
           </div>
@@ -126,7 +126,7 @@ const Ecosystem = () => {
           <br />
         </div>
         <div className="d-flex flex-wrap gap-2 justify-content-center ">
-          {data.map((i) => (
+          {data.map(i => (
             <img
               loading="lazy"
               data-aos="fade-down"
@@ -155,7 +155,7 @@ const Ecosystem = () => {
             src={bnr}
             alt=""
             className="img-fluid"
-            style={{ objectFit: "cover", width: "100%", height: "100%" }}
+            style={{ objectFit: 'cover', width: '100%', height: '100%' }}
           />
         </div>
 
@@ -164,9 +164,9 @@ const Ecosystem = () => {
             <h2 className="fw-bold">Unveiling Tech Excellence.</h2>
             <p
               style={{
-                fontSize: "19px",
-                lineHeight: "28px",
-                marginTop: "23px",
+                fontSize: '19px',
+                lineHeight: '28px',
+                marginTop: '23px',
               }}
             >
               ZSI is one of the leading & pioneer software development companies

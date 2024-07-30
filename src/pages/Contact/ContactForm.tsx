@@ -1,4 +1,3 @@
-import React from 'react';
 import { Form, Input, Button, Checkbox, Select } from 'antd';
 import { Row, Col } from 'react-bootstrap';
 
@@ -13,7 +12,7 @@ interface FormValues {
 
 const { Option } = Select;
 
-const ContactForm: React.FC = () => {
+const ContactForm = () => {
   const onFinish = (values: FormValues) => {
     console.log('Received values:', values);
   };
