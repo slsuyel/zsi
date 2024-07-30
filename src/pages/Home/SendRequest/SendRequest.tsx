@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 const SendRequest = () => {
   return (
-    <div className="bg-primary my-5" data-aos="fade-up">
+    <div className="animated-gradient mb-5" data-aos="fade-up">
       <div className="row mx-auto p-3 col-md-11">
         <div className=" col-md-6">
           <form className="p-4 rounded  text-white">
@@ -14,7 +14,7 @@ const SendRequest = () => {
                 <input
                   data-aos="fade-up"
                   type="text"
-                  className="form-control p-2 "
+                  className="form-control p-3 "
                   id="fullname"
                   placeholder="Full Name"
                 />{' '}
@@ -26,7 +26,7 @@ const SendRequest = () => {
                 <input
                   data-aos="fade-up"
                   type="email"
-                  className="form-control p-2 "
+                  className="form-control p-3 "
                   id="email"
                   placeholder="E-mail"
                 />
@@ -41,7 +41,7 @@ const SendRequest = () => {
                 <input
                   data-aos="fade-up"
                   type="tel"
-                  className="form-control p-2 "
+                  className="form-control p-3 "
                   id="phone"
                   placeholder="Phone number"
                 />
@@ -53,7 +53,7 @@ const SendRequest = () => {
                 <input
                   data-aos="fade-up"
                   type="text"
-                  className="form-control p-2 "
+                  className="form-control p-3 "
                   id="company"
                   placeholder="Company"
                 />
@@ -65,7 +65,7 @@ const SendRequest = () => {
               </label>
               <textarea
                 // data-aos="zoom-in"
-                className="form-control p-2 "
+                className="form-control p-3 "
                 id="message"
                 placeholder="How can we help you?"
               ></textarea>
@@ -77,7 +77,7 @@ const SendRequest = () => {
               <input
                 type="file"
                 data-aos="zoom-out"
-                className="form-control p-2 "
+                className="form-control p-3 "
                 id="file"
               />
             </div>
