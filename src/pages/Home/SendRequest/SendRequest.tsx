@@ -14,7 +14,8 @@ const SendRequest = () => {
                 <input
                   data-aos="fade-up"
                   type="text"
-                  className="form-control p-3 "
+                  className="form-control "
+                  style={{ padding: '13px 20px' }}
                   id="fullname"
                   placeholder="Full Name"
                 />{' '}
@@ -26,7 +27,8 @@ const SendRequest = () => {
                 <input
                   data-aos="fade-up"
                   type="email"
-                  className="form-control p-3 "
+                  className="form-control "
+                  style={{ padding: '13px 20px' }}
                   id="email"
                   placeholder="E-mail"
                 />
@@ -41,7 +43,8 @@ const SendRequest = () => {
                 <input
                   data-aos="fade-up"
                   type="tel"
-                  className="form-control p-3 "
+                  className="form-control "
+                  style={{ padding: '13px 20px' }}
                   id="phone"
                   placeholder="Phone number"
                 />
@@ -53,7 +56,8 @@ const SendRequest = () => {
                 <input
                   data-aos="fade-up"
                   type="text"
-                  className="form-control p-3 "
+                  className="form-control "
+                  style={{ padding: '13px 20px' }}
                   id="company"
                   placeholder="Company"
                 />
@@ -65,7 +69,8 @@ const SendRequest = () => {
               </label>
               <textarea
                 // data-aos="zoom-in"
-                className="form-control p-3 "
+                className="form-control "
+                style={{ padding: '13px 20px' }}
                 id="message"
                 placeholder="How can we help you?"
               ></textarea>
@@ -77,7 +82,8 @@ const SendRequest = () => {
               <input
                 type="file"
                 data-aos="zoom-out"
-                className="form-control p-3 "
+                className="form-control "
+                style={{ padding: '13px 20px' }}
                 id="file"
               />
             </div>
