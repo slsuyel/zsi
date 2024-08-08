@@ -1,22 +1,27 @@
+import useIsMobile from '@/hooks/useIsMobile';
 import Banner from '../Banner/Banner';
 import DrivingGrowth from '../DrivingGrowth/DrivingGrowth';
 import Ecosystem from '../Ecosystem/Ecosystem';
 import OurExpertise from '../OurExpertise/OurExpertise';
 import OurIndustries from '../OurIndustries/OurIndustries';
 import ScrollImage from '../ScrollImage/ScrollImage';
-import SendRequest from '../SendRequest/SendRequest';
+import RubeGoldberg from '../SendRequest/RubeGoldberg';
+
 import ServiceCard from '../ServiceCard/ServiceCard';
 import TechnologyAdvance from '../TechnologyAdvance/TechnologyAdvance';
 import TrialPeriod from '../TrialPeriod/TrialPeriod';
+import SendRequest from '../SendRequest/SendRequest';
 
 const Home = () => {
+  const isMobile = useIsMobile();
+
   return (
     <>
       <ScrollImage />
 
       <Banner />
 
-      <div style={{ background: '#ECEEF0' }}>
+      {/* <div style={{ background: '#ECEEF0' }}>
         <div className="align-items-center container mx-auto py-5 row text-center">
           <h2 className="col-md-4" style={{ fontWeight: 700, fontSize: 50 }}>
             Time to Reinvent
@@ -33,9 +38,9 @@ const Home = () => {
             Starts here
           </h2>
         </div>
-      </div>
+      </div> */}
 
-      <SendRequest />
+      {isMobile ? <SendRequest /> : <RubeGoldberg />}
 
       <DrivingGrowth />
       <TrialPeriod />
