@@ -1,8 +1,8 @@
-import Banner from '../Banner/Banner';
 import DrivingGrowth from '../DrivingGrowth/DrivingGrowth';
 import Ecosystem from '../Ecosystem/Ecosystem';
 import OurExpertise from '../OurExpertise/OurExpertise';
 import OurIndustries from '../OurIndustries/OurIndustries';
+import ScrollImage from '../ScrollImage/ScrollImage';
 import SendRequest from '../SendRequest/SendRequest';
 import ServiceCard from '../ServiceCard/ServiceCard';
 import TechnologyAdvance from '../TechnologyAdvance/TechnologyAdvance';
@@ -11,7 +11,9 @@ import TrialPeriod from '../TrialPeriod/TrialPeriod';
 const Home = () => {
   return (
     <>
-      <Banner />
+      <ScrollImage />
+
+      {/* <Banner /> */}
 
       <div style={{ background: '#ECEEF0' }}>
         <div className="align-items-center container mx-auto py-5 row text-center">
