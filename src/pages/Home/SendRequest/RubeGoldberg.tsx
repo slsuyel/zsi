@@ -1,28 +1,25 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { useEffect } from 'react';
 import './RubeGoldberg.css';
 import gsap from 'gsap';
-interface State {
-  handClosed: boolean;
-  sumbitBtnOnPlace: boolean;
-  sumbitBtnTextOpacity: number;
-  pullProgress: number;
-}
 
 const RubeGoldberg = () => {
   useEffect(() => {
-    const containerEl = document.querySelector('.container');
+    const containerEl = document.querySelector(
+      '.container'
+    ) as HTMLElement | null;
     const checkboxEl = document.querySelector(
       '.form-container-rb .form-row input[type="checkbox"]'
-    );
+    ) as HTMLInputElement | null;
     const nameEl = document.querySelector(
       '.form-container-rb .form-row input[name="name"]'
-    );
+    ) as HTMLInputElement | null;
     const emailEl = document.querySelector(
       '.form-container-rb .form-row input[name="email"]'
-    );
+    ) as HTMLInputElement | null;
     const submitBtn = document.querySelector(
       '.form-container-rb .form-row input[type="submit"]'
-    );
+    ) as HTMLInputElement | null;
 
     const sprayer = document.querySelector('.sprayer');
     const sprayHandContainer = document.querySelector('.spray-hand-container');
@@ -31,7 +28,10 @@ const RubeGoldberg = () => {
 
     const pushingHand = document.querySelector('.pushing-hand');
     const sprayerHead = document.querySelector('.sprayer-head');
-    const gearsContainer = document.querySelector('svg .gears');
+    const gearsContainer = document.querySelector(
+      'svg .gears'
+    ) as SVGElement | null;
+
     const gearConnector = document.querySelector('.gear-connector');
 
     const pullSystemContainer = document.querySelector('.pull-system');
@@ -91,86 +91,92 @@ const RubeGoldberg = () => {
 
     const emailTl = createEmailTl();
     const gearsTls = createGearsTimelines();
-    createPullingTimeline(state.handClosed, checkboxEl.checked);
 
-    checkboxEl.addEventListener('change', () => {
-      createPullingTimeline(state.handClosed, checkboxEl.checked);
-    });
+    if (checkboxEl) {
+      checkboxEl.addEventListener('change', () => {
+        createPullingTimeline(state.handClosed, checkboxEl.checked);
+      });
+    }
 
-    nameEl.addEventListener('input', () => {
-      nameValid = nameEl.value.length > 3;
-      if (nameValid) {
-        nameEl.classList.add('valid');
-        gearsTls.forEach(tl => {
-          if (tl.paused()) {
-            tl.play();
-            gsap.fromTo(
-              tl,
-              {
+    if (nameEl && submitBtn) {
+      nameEl.addEventListener('input', () => {
+        nameValid = nameEl.value.length > 3;
+
+        if (nameValid) {
+          nameEl.classList.add('valid');
+
+          gearsTls.forEach(tl => {
+            if (tl.paused()) {
+              tl.play();
+              gsap.fromTo(tl, { timeScale: 0 }, { timeScale: 1 });
+            }
+          });
+        } else {
+          nameEl.classList.remove('valid');
+
+          gearsTls.forEach(tl => {
+            if (!tl.paused()) {
+              gsap.to(tl, {
                 timeScale: 0,
-              },
-              {
-                timeScale: 1,
-              }
-            );
-          }
-        });
-      } else {
-        nameEl.classList.remove('valid');
-        gearsTls.forEach(tl => {
-          if (!tl.paused()) {
-            gsap.to(tl, {
-              timeScale: 0,
-              onComplete: () => {
-                tl.pause();
-              },
-            });
-          }
-        });
-        sprayRepeatCounter = 0;
-        gsap.to(submitBtn, {
-          duration: 0.3,
-          color: 'rgba(0, 0, 0, ' + 0 + ')',
-        });
-      }
-    });
+                onComplete: () => {
+                  tl.pause();
+                },
+              });
+            }
+          });
 
-    emailEl.addEventListener('input', () => {
-      const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-      emailValid = emailRegex.test(emailEl.value);
-      if (emailValid) {
-        emailTl.play();
-        emailEl.classList.add('valid');
-      } else {
-        emailTl.reverse();
-        emailEl.classList.remove('valid');
-      }
-    });
+          sprayRepeatCounter = 0;
 
-    submitBtn.addEventListener('click', () => {
-      if (
-        emailValid &&
-        checkboxEl.checked &&
-        nameValid &&
-        sprayRepeatCounter > 1
-      ) {
-        gsap.to('svg > *', {
-          duration: 0.1,
-          opacity: 0,
-          stagger: {
-            each: 0.03,
-            from: 'random',
-            ease: 'none',
-          },
-        });
-        gsap.to('.form-row', {
-          delay: 0.4,
-          duration: 0.1,
-          opacity: 0,
-          stagger: 0.1,
-        });
-      }
-    });
+          gsap.to(submitBtn, {
+            duration: 0.3,
+            color: 'rgba(0, 0, 0, 0)', // Use 0 instead of concatenating the string
+          });
+        }
+      });
+    }
+
+    if (emailEl) {
+      emailEl.addEventListener('input', () => {
+        const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+        emailValid = emailRegex.test(emailEl.value);
+        if (emailValid) {
+          emailTl.play();
+          emailEl.classList.add('valid');
+        } else {
+          emailTl.reverse();
+          emailEl.classList.remove('valid');
+        }
+      });
+    }
+
+    if (submitBtn) {
+      submitBtn.addEventListener('click', () => {
+        // Check that checkboxEl is not null
+        if (
+          emailValid &&
+          checkboxEl &&
+          checkboxEl.checked &&
+          nameValid &&
+          sprayRepeatCounter > 1
+        ) {
+          gsap.to('svg > *', {
+            duration: 0.1,
+            opacity: 0,
+            stagger: {
+              each: 0.03,
+              from: 'random',
+              ease: 'none',
+            },
+          });
+          gsap.to('.form-row', {
+            delay: 0.4,
+            duration: 0.1,
+            opacity: 0,
+            stagger: 0.1,
+          });
+        }
+      });
+    }
 
     function layoutPreparation() {
       gsap.set(pullSystemContainer, {
@@ -243,7 +249,14 @@ const RubeGoldberg = () => {
       });
     }
 
-    function updateSpiralPath(centerX, centerY, radius, coils, points, offset) {
+    function updateSpiralPath(
+      centerX: number,
+      centerY: number,
+      radius: number,
+      coils: number,
+      points: number,
+      offset: number
+    ) {
       let path = '';
       let thetaMax = coils * 2 * Math.PI;
       const awayStep = radius / thetaMax;
@@ -443,7 +456,7 @@ const RubeGoldberg = () => {
     }
 
     function createGearsTimelines() {
-      const tls = [];
+      const tls: gsap.core.Timeline[] = [];
 
       const params = {
         baseSize: 15,
@@ -472,7 +485,7 @@ const RubeGoldberg = () => {
 
       const handleRadius = 14;
 
-      const gears = [];
+      const gears: any[] = [];
       data.forEach((d, dIdx) => {
         const radius = (d.teethNumber * params.baseSize) / (2 * Math.PI);
         let x, y, startAngle;
@@ -500,7 +513,11 @@ const RubeGoldberg = () => {
           'http://www.w3.org/2000/svg',
           'path'
         );
-        gearsContainer.appendChild(group);
+
+        if (gearsContainer) {
+          gearsContainer.appendChild(group);
+        }
+
         group.appendChild(path);
 
         const gear = {
@@ -584,7 +601,9 @@ const RubeGoldberg = () => {
               fill: '#000000',
             },
           });
-          gearsContainer.appendChild(circle);
+          if (gearsContainer) {
+            gearsContainer.appendChild(circle);
+          }
           gsap.set(path, {
             attr: {
               fill: '#000000',
@@ -701,8 +720,8 @@ const RubeGoldberg = () => {
       return tls;
     }
 
-    function createPullingTimeline(isFixed, BtnPulled) {
-      let tl = gsap.timeline({
+    function createPullingTimeline(isFixed: boolean, BtnPulled: boolean) {
+      const tl = gsap.timeline({
         // paused: true,
         defaults: {
           ease: 'power1.inOut',
@@ -835,8 +854,8 @@ const RubeGoldberg = () => {
         const buttonOriginPoint = [260, -76];
         const btnWidth = 270;
 
-        const deg =
-          ((gsap.getProperty(submitBtn, 'rotation') - 4) * Math.PI) / 180;
+        const rotation = gsap.getProperty(submitBtn, 'rotation');
+        const deg = ((Number(rotation) - 4) * Math.PI) / 180;
 
         const btnEnd = [
           buttonOriginPoint[0] - (btnWidth - 20) * Math.cos(deg),
