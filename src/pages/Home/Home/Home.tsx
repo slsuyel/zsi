@@ -1,3 +1,4 @@
+import Banner from '../Banner/Banner';
 import DrivingGrowth from '../DrivingGrowth/DrivingGrowth';
 import Ecosystem from '../Ecosystem/Ecosystem';
 import OurExpertise from '../OurExpertise/OurExpertise';
@@ -13,7 +14,7 @@ const Home = () => {
     <>
       <ScrollImage />
 
-      {/* <Banner /> */}
+      <Banner />
 
       <div style={{ background: '#ECEEF0' }}>
         <div className="align-items-center container mx-auto py-5 row text-center">

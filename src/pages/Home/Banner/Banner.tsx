@@ -1,8 +1,8 @@
 const Banner = () => {
   return (
-    <div data-aos="zoom-out-up" className="header-wave animated-gradient">
+    <div data-aos="zoom-out-up" className="header-wave gradient_purple">
       <div className="inner-header flex">
-        <h2 className="descriptions">
+        <h2 className="text-primary descriptions">
           We are a global software engineering company reinventing business in
           the age of generative Ai.
         </h2>

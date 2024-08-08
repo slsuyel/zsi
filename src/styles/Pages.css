@@ -5,6 +5,12 @@
   color: white;
 }
 
+.gradient_purple {
+  background: linear-gradient(153.58deg, #f7bdf8 32.25%, #2f3cc0 92.68%),
+    url(https://assets.codepen.io/16327/noise-e82662fe.png);
+  background-blend-mode: color-dodge;
+}
+
 .animated-gradient {
   background: linear-gradient(245deg, #007bff, #006b7f, #601c7f, #082073);
   background-size: 800% 800%;
